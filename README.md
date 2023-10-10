@@ -21,7 +21,7 @@ LCD akan menampilkan pesan error "OVERFLOW!" jika input atau outputnya melebihi 
 Akan menampilkan pesan error lain "DIV BY 0" jika pengguna mencoba membagi dengan nol.
 Keterbatasan lain adalah kalkulator ini hanya dapat bekerja dengan 2 bilangan. Jadi, misal mencoba memasukan "1+2+3", saat "=" ditekan, ia hanya akan melakukan "1+3" karena program hanya akan menyimpan angka pertama dan terakhir.
 
-### Link Tutorial Arduino Sebagai Uploader
+## Link Tutorial Arduino Sebagai Uploader
 
 https://youtu.be/8255_CHE5gE?si=fZOEaZyGLwA6_3DN
 
