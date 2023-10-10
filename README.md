@@ -20,3 +20,13 @@ Dikarenakan hampir setiap register pada 8052 itu 8-bit, kalkulator ini hanya bek
 LCD akan menampilkan pesan error "OVERFLOW!" jika input atau outputnya melebihi rentang 0-255, maka dari itu angka negatif juga tidak dapat dijalankan.
 Akan menampilkan pesan error lain "DIV BY 0" jika pengguna mencoba membagi dengan nol.
 Keterbatasan lain adalah kalkulator ini hanya dapat bekerja dengan 2 bilangan. Jadi, misal mencoba memasukan "1+2+3", saat "=" ditekan, ia hanya akan melakukan "1+3" karena program hanya akan menyimpan angka pertama dan terakhir.
+
+### Link Tutorial Arduino Sebagai Uploader
+
+https://youtu.be/8255_CHE5gE?si=fZOEaZyGLwA6_3DN
+
+Download file "AVR8051.conf" terlebih dahulu kemudian ikuti langkah pada video. 
+
+Command yang digunakan sebagai berikut:
+
+"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe" -C C:/AVR8051.conf -c stk500v1 -P COM5 -p 89s52/1 -b 19200 -U flash:w:"PATH":a
