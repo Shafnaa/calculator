@@ -1,5 +1,6 @@
 # Tugas Besar Sistem Mikroprosessor
-Merancang kalkulator menggunakan mikroprosessor AT80S52, keypad, LCD 16x2, dan bahasa assembly.
+
+Merancang kalkulator menggunakan mikroprosessor AT89S52, keypad, LCD 16x2, dan bahasa assembly.
 
 Pada project ini, bahasa Assembly digunakan untuk membuat kalkulator sederhana menggunakan keypad sebagai input dan LCD display sebagai output.
 
@@ -9,7 +10,7 @@ Dalam perancangan kalkulator ini, menggunakan Proteus untuk melakukan simulasi d
 
 ## Spesifikasi
 
-Dikarenakan hampir setiap register pada 8052 itu 8-bit, kalkulator ini hanya bekerja dalam rentang 0-255. Fitur:
+Dikarenakan hampir setiap register pada 8952 itu 8-bit, kalkulator ini hanya bekerja dalam rentang 0-255. Fitur:
 
 - Penjumlahan,
 - Pengurangan,
@@ -25,8 +26,12 @@ Keterbatasan lain adalah kalkulator ini hanya dapat bekerja dengan 2 bilangan. J
 
 https://youtu.be/8255_CHE5gE?si=fZOEaZyGLwA6_3DN
 
-Download file "AVR8051.conf" terlebih dahulu kemudian ikuti langkah pada video. 
+Download file "AVR8051.conf" terlebih dahulu kemudian ikuti langkah pada video.
 
 Command yang digunakan sebagai berikut:
 
-"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe" -C C:/AVR8051.conf -c stk500v1 -P COM5 -p 89s52/1 -b 19200 -U flash:w:"PATH":a
+"C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe" -C C:/AVR8051.conf -c stk500v1 -P COM5 -p 89s52 -b 19200 -U flash:w:"PATH":a
+
+alternatively you can use avrdude.exe from your Proteus folder and make sure to double check the COMX
+
+"D:\Productive App\Proteus 8 Professional\Tools\AVRDUDE\avrdude.exe" -C C:/AVR8051.conf -c stk500v1 -P COM5 -p 89s52 -b 19200 -U flash:w:"PATH":a
